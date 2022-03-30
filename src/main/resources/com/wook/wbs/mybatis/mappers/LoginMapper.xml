@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wook.wbs.mybatis.mappers.LoginMapper">
+
+	<resultMap id="loginResultMap" type="com.wook.wbs.services.login.vo.LoginVo" >
+		<result column="user_id"					property="userId"       			jdbcType="VARCHAR" />
+		<result column="user_pw"					property="userPw"       			jdbcType="VARCHAR" />
+		<result column="user_nm"					property="userNm"       			jdbcType="VARCHAR" />
+		<result column="reg_dt"						property="regDt"       				jdbcType="TIMESTAMP" />
+		<result column="aprv_yn"					property="aprvYn"       			jdbcType="CHAR" />
+		<result column="autzr_id"					property="autzrId"       			jdbcType="VARCHAR" />
+		<result column="use_yn"						property="useYn"       				jdbcType="CHAR" />
+		<result column="mdfcn_ymd"					property="mdfcnYmd"       			jdbcType="TIMESTAMP" />
+		<result column="mdfr_id"					property="mdfrId"       			jdbcType="VARCHAR" />
+		<result column="mdfr_ip"					property="mdfrIp"       			jdbcType="VARCHAR" />
+		<result column="rm"							property="rm"       				jdbcType="VARCHAR" />
+	</resultMap>
+
+	<select id="selectCmUserList" parameterMap="loginResultMap" resultMap="loginResultMap">
+		SELECT
+			  @rownum:= @rownum+1 as rownum
+			, user_id
+			, user_nm
+			, reg_dt
+			, aprv_yn
+			, autzr_id
+			, use_yn
+		FROM
+			cm_user_t
+		ORDER BY
+			user_nm
+	</select>
+
+	<select id="getUserInfo" parameterMap="loginResultMap" resultMap="loginResultMap">
+		SELECT
+			user_id
+			, user_pw
+			, user_nm
+			, reg_dt
+			, aprv_yn
+			, autzr_id
+			, use_yn
+			, rm
+		FROM
+			cm_user_t
+		WHERE
+			user_id = #{userId}
+	</select>
+
+</mapper>
