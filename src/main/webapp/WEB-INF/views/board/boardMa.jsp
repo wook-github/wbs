@@ -84,7 +84,7 @@ $(document).ready(function() {
 	wook.wbs.common.keyEvent();
 
 	invokeEvent();
-	//searchPage(1);
+	searchPage(1);
 });
 
 /*=======================
@@ -133,7 +133,7 @@ function selectBoardList(cPage) {
 	$("#tblList tbody").empty().append(wook.wbs.common.getWaitImg($("#tblList tbody").width(), 5));
 
 	$.ajax({
-		url			: 	"<c:url value='/board/getBoardList.do'/>",
+		url			: 	"<c:url value='/board/selectBoardList.do'/>",
 		data		:	{
 							gubun		: $("#selGubun").val(),							// 검색구분
 							keyword		: $("#keyword").val(),							// 검색어
@@ -161,7 +161,7 @@ function selectBoardList(cPage) {
 									if ( bbsFixYn == "Y" ) {
 										htmlStr += "	<td class='tc' style='color: red; font-weight: bold;'>고정</td>";
 									} else {
-										htmlStr += "	<td class='tc'>" + item.rownum + "</td>";
+										htmlStr += "	<td class='tc'>" + boardSn + "</td>";
 									}
 									htmlStr += "	<td class='tl'><div class='nowrap' title='" + boardSj + "'>" + boardSj + "</div></td>";
 									htmlStr += "	<td class='tc'><div class='nowrap' title='" + mdfrId + "'>" + mdfrId + "</div></td>";
@@ -200,6 +200,7 @@ function selectBoardList(cPage) {
 }
 
 // 게시판 상세 정보 화면
+/*
 function getBoardDetail(dataValue) {
 	var bbsSn = dataValue[0];
 	var bbsSe = dataValue[1];
@@ -219,14 +220,6 @@ function getBoardDetail(dataValue) {
 	}
 }
 
-// 답변 상세 정보 화면
-function getSyAnsDetail(ansSn) {
-	$("#divSyAnsDetail").hide();
-
-	var url = "<c:url value='/sy/syAnsDetail.do'/>";
-	url += "?ansSn=" 	+ ansSn;
-	$("#divSyAnsDetail").show().load(url);
-}
 
 
 // 게시판 등록(수정) 화면
@@ -240,14 +233,5 @@ function getSyBbsUpdate(bbsSn, bbsSe, pageMode) {
 	url += "&pageMode=" + pageMode;
 	$("#divSyBbsDetail").show().load(url);
 }
-
-// 답변 등록(수정) 화면
-function getSyAnsUpdate(ansSn, bbsSn, pageMode) {
-	$("#divSyAnsDetail").hide();
-	var url = "<c:url value='/sy/syAnsUpdate.do'/>";
-	url += "?ansSn=" + ansSn;
-	url += "&bbsSn=" + bbsSn;
-	url += "&pageMode=" + pageMode;
-	$("#divSyAnsDetail").show().load(url);
-}
+ */
 </script>

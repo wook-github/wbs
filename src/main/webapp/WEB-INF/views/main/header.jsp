@@ -25,7 +25,7 @@ $(document).ready(function(){
 					message = "요청 주소가 잘못됐습니다."
 				}
 
-				if(this.url == "<c:url value='/common/messageBox.do'/>" && status == "error"){
+				if(this.url == "<c:url value='/cm/messageBox.do'/>" && status == "error"){
 					$.modal.close();
 					alert('서버에서 오류가 발생했습니다. 잠시 후 다시 시도해 주시기 바랍니다.');
 				}
@@ -143,6 +143,26 @@ function topMenuEventHandler() {
 
 		changeSubmenu(mMenuId, sMenuId);
 	});
+}
+
+function fnLoadingStart() {
+	fnLoadingEnd();
+	var backHeight = $(document).height(); //뒷 배경의 상하 폭
+	var backWidth = window.document.body.clientWidth; //뒷 배경의 좌우 폭
+	var backGroundCover = "<div id='back'></div>"; //뒷 배경을 감쌀 커버
+	var loadingBarImage = ''; //가운데 띄워 줄 이미지
+	loadingBarImage += "<div id='loadingBar'>";
+	loadingBarImage += " <img src='<c:url value='/resources/images/common/loading.gif'/>' width = 100 height =100 />"; //로딩 바 이미지
+	loadingBarImage += "</div>";
+	$('body').append(backGroundCover).append(loadingBarImage);
+	$('#back').css({ 'width': backWidth, 'height': backHeight, 'opacity': '0.3','z-index': '9999'});
+	$('#back').show();
+	$('#loadingBar').show();
+}
+
+function fnLoadingEnd() {
+	$('#back, #loadingBar').hide();
+	$('#back, #loadingBar').remove();
 }
 
 

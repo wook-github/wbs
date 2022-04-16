@@ -527,7 +527,7 @@ wook.wbs.common = {
 			}
 
 			$("#divMessage").modal({escapeClose: false, clickClose: false, showClose: false, closeExisting: false });
-			$("#divMessage").empty().load(this.contextPath + "/common/messageBox.do");
+			$("#divMessage").empty().load(this.contextPath + "/cm/messageBox.do");
 		},
 
 		// modal dialog
@@ -909,7 +909,7 @@ wook.wbs.common = {
 			}
 			var htmlStr  = "";
 			htmlStr += "<tr  class='nohover'>";
-			htmlStr += "	<td class='tc' style='width:" + width + "px;' colspan='" + colspan + "'><img src='" + this.contextPath + "/resources/images/icons/loading_large.gif'   title='waiting.....'  style='width:20px; height:20px; vertical-align:middle;' /></td>";
+			htmlStr += "	<td class='tc' style='width:" + width + "px;' colspan='" + colspan + "'><img src='" + this.contextPath + "/resources/images/icons/loading_small.gif'   title='waiting.....'  style='width:20px; height:20px; vertical-align:middle;' /></td>";
 			htmlStr += "</tr>";
 
 			return htmlStr;

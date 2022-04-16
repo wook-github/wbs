@@ -17,35 +17,4 @@
 		<result column="rm"							property="rm"       				jdbcType="VARCHAR" />
 	</resultMap>
 
-	<select id="selectCmUserList" parameterMap="loginResultMap" resultMap="loginResultMap">
-		SELECT
-			  @rownum:= @rownum+1 as rownum
-			, user_id
-			, user_nm
-			, reg_dt
-			, aprv_yn
-			, autzr_id
-			, use_yn
-		FROM
-			cm_user_t
-		ORDER BY
-			user_nm
-	</select>
-
-	<select id="getUserInfo" parameterMap="loginResultMap" resultMap="loginResultMap">
-		SELECT
-			user_id
-			, user_pw
-			, user_nm
-			, reg_dt
-			, aprv_yn
-			, autzr_id
-			, use_yn
-			, rm
-		FROM
-			cm_user_t
-		WHERE
-			user_id = #{userId}
-	</select>
-
 </mapper>

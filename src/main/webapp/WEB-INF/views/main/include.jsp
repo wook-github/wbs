@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
     <!--[if lt IE 7]><meta http-equiv="imagetoolbar" content="no"><![endif]-->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <%--
 	<link rel="shortcut icon" href="<c:url value='/resources/images/icons/favicon.ico'/>" type="image/x-icon"><!-- 브라우져 파비콘 -->
-
+ 	--%>
 	<title>A to NINE</title>
 
     <link rel="stylesheet" href="<c:url value='/resources/css/jquery-ui.css'/>" >
