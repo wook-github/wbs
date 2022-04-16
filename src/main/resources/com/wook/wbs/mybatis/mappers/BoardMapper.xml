@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wook.wbs.mybatis.mappers.BoardMapper">
+
+	<resultMap id="cmBoardResultMap" type="com.wook.wbs.services.cm.vo.CmBoardVo" >
+		<result column="board_sn"					property="boardSn"       			jdbcType="INTEGER" />
+		<result column="board_se"					property="boardSe"       			jdbcType="CHAR" />
+		<result column="board_sj"					property="boardSj"       			jdbcType="VARCHAR" />
+		<result column="board_cn"					property="boardCn"      			jdbcType="VARCHAR" />
+		<result column="board_fix_yn"				property="boardfixYn"       		jdbcType="CHAR" />
+		<result column="use_yn"						property="useYn"       				jdbcType="CHAR" />
+		<result column="mdfcn_ymd"					property="mdfcnYmd"       			jdbcType="TIMESTAMP" />
+		<result column="mdfr_id"					property="mdfrId"       			jdbcType="VARCHAR" />
+		<result column="mdfr_ip"					property="mdfrIp"       			jdbcType="VARCHAR" />
+		<result column="rm"							property="rm"       				jdbcType="VARCHAR" />
+	</resultMap>
+
+	<select id="selectBoardList" parameterType="hashmap" resultMap="cmBoardResultMap">
+		SELECT
+			  board_sn
+			, board_se
+			, board_sj
+			, board_cn
+			, board_fix_yn
+			, use_yn
+			, mdfcn_ymd
+			, mdfr_id
+		FROM
+			  cm_board_t
+	</select>
+</mapper>
