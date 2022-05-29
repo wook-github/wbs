@@ -1,7 +1,5 @@
 package com.wook.wbs.services.cm.vo;
 
-import java.sql.Timestamp;
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -12,7 +10,7 @@ import lombok.ToString;
 public class CommVo {
 
 	private String useYn;
-	private Timestamp mdfcnYmd;
+	private String mdfcnYmd;
 	private String mdfrId;
 	private String mdfrIp;
 	private String rm;

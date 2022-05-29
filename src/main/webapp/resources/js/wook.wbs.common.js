@@ -1146,8 +1146,8 @@ wook.wbs.common = {
 			if (day == null || day == "") return "";
 
 			var yyyy	= day.substring(0,4);
-			var mm		= day.substring(4,6);
-			var dd		= day.substring(6,8);
+			var mm		= day.substring(5,7);
+			var dd		= day.substring(8,10);
 
 //			var date 	= new Date( day );
 //			var yyyy 	= date.getFullYear();

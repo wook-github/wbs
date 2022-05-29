@@ -146,19 +146,19 @@ function selectBoardList(cPage) {
 							var htmlStr = "";
 							if (data.result.length > 0) {
 								$.each(data.result,function(index,item) {
-									var boardSn		= wook.wbs.common.maskFormat(item.boardSn);					/* 게시판순번 */
-									var boardSe		= wook.wbs.common.maskFormat(item.boardSe);					/* 게시판구분 */
-									var boardSj		= wook.wbs.common.maskFormat(item.boardSj);					/* 게시판제목 */
-									var boardCn		= wook.wbs.common.maskFormat(item.boardCn);					/* 게시판내용 */
-									var boardFixYn 	= wook.wbs.common.maskFormat(item.boardFixYn);				/* 고정여부 */
-									var mdfcnYmd	= wook.wbs.common.dateToString(item.mdfcnYmd);				/* 작성일자 */
-									var mdfrId		= wook.wbs.common.dateToString(item.mdfrId);				/* 작성자ID */
+									var boardSn		= wook.wbs.common.maskFormat(item.boardSn);			/* 게시판순번 */
+									var boardSe		= wook.wbs.common.maskFormat(item.boardSe);			/* 게시판구분 */
+									var boardSj		= wook.wbs.common.maskFormat(item.boardSj);			/* 게시판제목 */
+									var boardCn		= wook.wbs.common.maskFormat(item.boardCn);			/* 게시판내용 */
+									var boardFixYn 	= wook.wbs.common.maskFormat(item.boardFixYn);		/* 고정여부 */
+									var mdfcnYmd	= wook.wbs.common.dateToString(item.mdfcnYmd);		/* 작성일자 */
+									var mdfrId		= wook.wbs.common.maskFormat(item.mdfrId);			/* 작성자ID */
 
 									htmlStr += "<tr	";
 									htmlStr += "	data-boardsn=" + boardSn + "";
 									htmlStr += "	data-boardse=" + boardSe + "";
 									htmlStr += ">";
-									if ( bbsFixYn == "Y" ) {
+									if ( boardFixYn == "Y" ) {
 										htmlStr += "	<td class='tc' style='color: red; font-weight: bold;'>고정</td>";
 									} else {
 										htmlStr += "	<td class='tc'>" + boardSn + "</td>";
@@ -172,11 +172,11 @@ function selectBoardList(cPage) {
 							} else {
 								htmlStr = "<tr class='nohover'><td colspan='5' class='tc' style='color:#999999'>검색된 정보가 없습니다.</td></tr>";
 							}
-
+/*
 							var totalCount = (data.result.length == 0 ? 0 : data.result[0].totalCount);
 							_pager = new Pager("divPaginator", "_pager", 1);	// global로 선언해함.  패러미터 :  divPaginator(페이징 div id),  _pager(페이저 객체를 담는 object),  1 (페이저 객체 number)
 							_pager.makePaging(_cPage, totalCount, _rows, $("#divTotalPage"));
-
+ */
 							$("#tblList tbody").html(htmlStr);
 
 							if (data.result.length > 0) {
