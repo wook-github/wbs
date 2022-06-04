@@ -65,7 +65,7 @@
 			</div>
 
 			<!-- 게시판 상세정보 -->
-			<div id="divSyBbsDetail"></div>
+			<div id="divBoardDetail"></div>
 
 		</div>
 
@@ -80,8 +80,8 @@ var _pager = null;
 
 
 $(document).ready(function() {
-	wook.wbs.common.movePageEventHandler();
-	wook.wbs.common.keyEvent();
+	//wook.wbs.common.movePageEventHandler();
+	//wook.wbs.common.keyEvent();
 
 	invokeEvent();
 	searchPage(1);
@@ -129,9 +129,9 @@ function searchBoardList(cPage) {
 // 게시판 목록 조회
 function selectBoardList(cPage) {
 	$("#divBoardDetail").hide();
-
+	
 	$("#tblList tbody").empty().append(wook.wbs.common.getWaitImg($("#tblList tbody").width(), 5));
-
+	
 	$.ajax({
 		url			: 	"<c:url value='/board/selectBoardList.do'/>",
 		data		:	{
@@ -170,6 +170,7 @@ function selectBoardList(cPage) {
 									htmlStr += "</tr>";
 								});
 							} else {
+								
 								htmlStr = "<tr class='nohover'><td colspan='5' class='tc' style='color:#999999'>검색된 정보가 없습니다.</td></tr>";
 							}
 /*

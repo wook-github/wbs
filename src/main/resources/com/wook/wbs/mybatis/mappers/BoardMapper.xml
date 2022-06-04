@@ -24,9 +24,9 @@
 			, board_cn
 			, board_fix_yn
 			, use_yn
-			, mdfcn_ymd
+			, TO_CHAR(mdfcn_ymd, 'YYYY-MM-DD') as mdfcn_ymd
 			, mdfr_id
 		FROM
-			  cm_board_t
+			  wbs.cm_board_t
 	</select>
 </mapper>

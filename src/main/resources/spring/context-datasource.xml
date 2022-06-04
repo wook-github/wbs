@@ -11,7 +11,7 @@
 	</bean>
 	 -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
- 		<property name="driverClassName"	value="com.mysql.jdbc.Driver"/>
+ 		<property name="driverClassName"	value="com.mysql.cj.jdbc.Driver"/>
  		<property name="url"				value="jdbc:mysql://localhost:3306/wbs" />
  		<property name="username"			value="wook"/>
 		<property name="password"			value="wook"/>

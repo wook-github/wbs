@@ -191,6 +191,7 @@
 		  <version>1.1.2</version>
 		  <scope>compile</scope>
 		</dependency>
+		
 		<!-- lombok 설정 -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
