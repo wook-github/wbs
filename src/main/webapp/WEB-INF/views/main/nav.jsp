@@ -55,31 +55,31 @@ function subMenuChangeEventHandler() {
 //기반시설통합관리시스템 탭 메뉴 화면 이동.
 function moveSubmenu(menuInx){
 	if (menuInx == "111") {		// 데이터관리 > 건설안전데이터
-		location.href=g3way.csfi.common.contextPath + "/dat/cns/cnsMa.do";
+		location.href=wook.wbs.common.contextPath + "/dat/cns/cnsMa.do";
 	} else if (menuInx == "121") {		// 데이터관리 > 건설안전 통계
-		location.href=g3way.csfi.common.contextPath + "/dat/cns/statsMa.do";
+		location.href=wook.wbs.common.contextPath + "/dat/cns/statsMa.do";
 	} else if (menuInx == "131") {		// 데이터관리  > 시설안전데이터
-		location.href=g3way.csfi.common.contextPath + "/dat/fcs/dtBrMa.do";
+		location.href=wook.wbs.common.contextPath + "/dat/fcs/dtBrMa.do";
 	} else if (menuInx == "141") {		// 데이터관리 > 시설안전 통계
-		location.href=g3way.csfi.common.contextPath + "/dat/fcs/stBrMa.do";
+		location.href=wook.wbs.common.contextPath + "/dat/fcs/stBrMa.do";
 	} else if (menuInx == "211") {		// 모델관리 > 건설안전 예측모델
-		location.href=g3way.csfi.common.contextPath + "/mdl/cns/mdlCnsMa.do";
+		location.href=wook.wbs.common.contextPath + "/mdl/cns/mdlCnsMa.do";
 	} else if (menuInx == "221") {		// 모델관리 > 시설안전 예측모델
-		location.href=g3way.csfi.common.contextPath + "/mdl/fcs/mdlFcsMa.do";
+		location.href=wook.wbs.common.contextPath + "/mdl/fcs/mdlFcsMa.do";
 	} else if (menuInx == "311") {		// 분석·예측 > 성능분석
-		location.href=g3way.csfi.common.contextPath + "/ans/cns/ansCnsMa.do";
+		location.href=wook.wbs.common.contextPath + "/ans/cns/ansCnsMa.do";
 	} else if (menuInx == "312") {		// 분석·예측 > 비용분석
-		location.href=g3way.csfi.common.contextPath + "/ans/cns/ansCnsAcdnt.do";
+		location.href=wook.wbs.common.contextPath + "/ans/cns/ansCnsAcdnt.do";
 	} else if (menuInx == "321") {		// 분석·예측 > 소요예산예측분석
-		location.href=g3way.csfi.common.contextPath + "/ans/fcs/ansFcsMa.do";
+		location.href=wook.wbs.common.contextPath + "/ans/fcs/ansFcsMa.do";
 	} else if (menuInx == "322") {		// 분분석·예측 > 사용자별
-		location.href=g3way.csfi.common.contextPath + "/ans/fcs/ansFcsAcdnt.do";
+		location.href=wook.wbs.common.contextPath + "/ans/fcs/ansFcsAcdnt.do";
 	} else if (menuInx == "911") {		// 시스템 관리 > 사용자 관리
-		location.href=g3way.csfi.common.contextPath + "/sys/usr/cmUser.do";
+		location.href=wook.wbs.common.contextPath + "/sys/usr/cmUser.do";
 	} else if (menuInx == "921") {		// 시스템관리 > 공통코드 관리
-		location.href=g3way.csfi.common.contextPath + "/sys/cmn/cmCode.do";
+		location.href=wook.wbs.common.contextPath + "/sys/cmn/cmCode.do";
 	} else if (menuInx == "931") {		// 시스템관리 > 모델이력관리
-		location.href=g3way.csfi.common.contextPath + "/sys/mdl/cmMdlMa.do";
+		location.href=wook.wbs.common.contextPath + "/sys/mdl/cmMdlMa.do";
 	}
 }
 
@@ -140,20 +140,20 @@ function main() {
 }
 </script>
 <div id="lnb">
-	<div class="title h2">데이터관리</div>
+	<div class="title h2">패션</div>
 	<!-- 1. 모델개발 -->
 	<ul id="nav1" class="depth2">
 		<li>
-			<a href="javascript:;" data-mmenuid="1" data-smenuid="11">건설안전데이터</a>
+			<a href="javascript:;" data-mmenuid="1" data-smenuid="11">상의</a>
 		</li>
 		<li>
-			<a href="javascript:;" data-mmenuid="1" data-smenuid="21">건설안전 통계</a>
+			<a href="javascript:;" data-mmenuid="1" data-smenuid="21">하의</a>
 		</li>
 		<li>
-			<a href="javascript:;" data-mmenuid="1" data-smenuid="31">시설안전데이터</a>
+			<a href="javascript:;" data-mmenuid="1" data-smenuid="31">액세서리</a>
 		</li>
 		<li>
-			<a href="javascript:;" data-mmenuid="1" data-smenuid="41">시설안전 통계</a>
+			<a href="javascript:;" data-mmenuid="1" data-smenuid="41">기타</a>
 		</li>
 	</ul>
 
