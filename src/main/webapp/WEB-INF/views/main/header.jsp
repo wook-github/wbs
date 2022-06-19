@@ -191,18 +191,20 @@ function changeSubmenu(mMenuId, sMenuId){
                     <button type="submit" aria-label="검색" class="btn-search"></button>
                 </div>
             </form> -->
-            <div class="header_menu">
-				<ul>
-					<li>
-						<a>패션</a>
-					</li>
-					<li>
-						<a>영화</a>
-					</li>
-					<li>
-						<a>음악</a>
-					</li>
-				</ul>
+            <div class="header_area">
+            	<div class="header_menu">
+            		<ul>
+						<li>
+							<a>패션</a>
+						</li>
+						<li>
+							<a>영화</a>
+						</li>
+						<li>
+							<a>음악</a>
+						</li>
+					</ul>
+            	</div>
             </div>
             <nav class="nav-mine">
             	<a href="\mypage" class="btn-mypage">마이페이지</a>
