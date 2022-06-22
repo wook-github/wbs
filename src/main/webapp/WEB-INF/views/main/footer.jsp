@@ -14,7 +14,7 @@ $(document).ready(function(){
 		<div class="inner">
 			<div class="infos-company">
 				<h1 class="tit-h1">
-					<a class="more-brandi">지누기</a>
+					<a class="more-brandi">점심뭐먹지?</a>
 				</h1>
 				<div id="brandi-info" class="infos">
 					<div class="bundle">

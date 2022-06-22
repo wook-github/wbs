@@ -183,7 +183,7 @@ function changeSubmenu(mMenuId, sMenuId){
 	<div class="artc">
     	<div class="inner">
         	<h1 class="site-name">
-            	<a href="\wbs\main.do" class="link">A to NINE</a>
+            	<a href="\wbs\main.do" class="link">점심뭐먹지?</a>
             </h1>
             <!-- <form method="get" action="\search" class="form-search">
             	<div>
@@ -195,13 +195,16 @@ function changeSubmenu(mMenuId, sMenuId){
             	<div class="header_menu">
             		<ul>
 						<li>
-							<a>패션</a>
+							<a>Search</a>
 						</li>
 						<li>
-							<a>영화</a>
+							<a>Map</a>
 						</li>
 						<li>
-							<a>음악</a>
+							<a>Community</a>
+						</li>
+						<li>
+							<a>Support</a>
 						</li>
 					</ul>
             	</div>
