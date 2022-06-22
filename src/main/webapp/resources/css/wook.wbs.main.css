@@ -107,21 +107,24 @@ input[type=checkbox] {cursor: pointer; margin-top:0px; width:16px; height:16px;}
 .Sec_header { z-index: 21; position: relative; }
 .Sec_header * { font-family: Noto Sans KR, Spoqa Han Sans, Sans-serif; font-weight: 400; letter-spacing: 0; }
 .Sec_header .artc { background-color: #fff; }
-.Sec_header .inner { max-width: 1280px; margin: 0 auto; }
+.Sec_header .inner { max-width: 1920px; margin: 0 auto; }
 
 /* header 관련 */
 .Artc_header .artc { position: relative; border-bottom: 1px solid #ebeef2; z-index: 22; }
-.Artc_header .inner { display: flex; padding: 32px 0px; flex-wrap: nowrap; justify-content: space-between; align-items: center; z-index: 2; }
+.Artc_header .inner { display: flex; padding: 20px 0px; flex-wrap: nowrap; justify-content: space-between; align-items: center; z-index: 2; }
 
 /* header 로고 관련 */
 .Artc_header .site-name { flex: 0 0 auto; margin: 0; }
+.Artc_header .site-name .link { overflow: hidden; display: block; width: 158px; height: 38px; text-indent: -999px; }
+/*
 .Artc_header .site-name .link { overflow: hidden; display: block; width: 158px; height: 38px; text-indent: -999px; background: url(../images/header/ic-hiver-symbollogo-xl.svg) no-repeat 50%/cover; }
+*/
 
 /* 메인메뉴 관련 */
 .Artc_header .header_area { width:700px; }
-.Artc_header .header_menu { display: flex; justify-content: center; margin-left: 100px; color: #222; }
+.Artc_header .header_menu { display: flex; justify-content: center; color: #222; }
 .Artc_header .header_menu ul { list-style:none; }
-.Artc_header .header_menu ul li { display:inline-block; padding: 0 50px; }
+.Artc_header .header_menu ul li { display:inline-block; padding: 0 30px; }
 .Artc_header .header_menu ul li a { font-size: 1.7em; font-weight: bold; }
 .Artc_header .header_menu ul li a:hover { color: #81898f; }
 

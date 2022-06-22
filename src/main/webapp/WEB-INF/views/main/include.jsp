@@ -11,7 +11,7 @@
     <%--
 	<link rel="shortcut icon" href="<c:url value='/resources/images/icons/favicon.ico'/>" type="image/x-icon"><!-- 브라우져 파비콘 -->
  	--%>
-	<title>A to NINE</title>
+	<title>점심뭐먹지?</title>
 
     <link rel="stylesheet" href="<c:url value='/resources/css/jquery-ui.css'/>" >
     <link rel="stylesheet" href="<c:url value='/resources/css/wook.wbs.main.css?ver=20210915'/>" >

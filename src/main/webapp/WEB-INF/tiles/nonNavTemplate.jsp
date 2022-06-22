@@ -9,7 +9,7 @@
 		<tiles:insertAttribute name="header"/>
 	</header>
 	<section>
-		<h2 class="blind">A to NINE</h2>
+		<h2 class="blind">점심뭐먹지?</h2>
 		<div class="wrap">
 			<article aria-label="article">
 				<tiles:insertAttribute name="body"/>
