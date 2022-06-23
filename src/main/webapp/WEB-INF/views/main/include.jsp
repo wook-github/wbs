@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<c:url value='/resources/css/jquery-ui.css'/>" >
     <link rel="stylesheet" href="<c:url value='/resources/css/wook.wbs.main.css?ver=20210915'/>" >
     <link rel="stylesheet" href="<c:url value='/resources/framework/jquery/jquery-modal/jquery.modal.css'/>" >
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" >
 
 	<script src="<c:url value='/resources/framework/jquery/jquery-1.12.4.min.js'/>"></script>
 	<script src="<c:url value='/resources/framework/jquery/jquery-ui.js' />"></script>
