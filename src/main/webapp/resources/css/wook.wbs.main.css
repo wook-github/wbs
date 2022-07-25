@@ -279,10 +279,7 @@ input[type=checkbox] {
 
 /* header 로고 관련 */
 .Artc_header .site-name { flex: 0 0 auto; margin: 0; }
-.Artc_header .site-name .link { overflow: hidden; display: block; width: 158px; height: 38px; text-indent: -999px; }
-/*
-.Artc_header .site-name .link { overflow: hidden; display: block; width: 158px; height: 38px; text-indent: -999px; background: url(../images/header/ic-hiver-symbollogo-xl.svg) no-repeat 50%/cover; }
-*/
+.Artc_header .site-name .link { overflow: hidden; display: block; width: 140px; height: 70px; text-indent: -999px; background: url(../images/header/Logo.png) no-repeat 50%/cover; }
 
 /* 메인메뉴 관련 */
 .Artc_header .header_area { width:700px; }

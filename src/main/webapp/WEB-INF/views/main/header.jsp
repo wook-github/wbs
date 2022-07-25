@@ -183,7 +183,7 @@ function changeSubmenu(mMenuId, sMenuId){
 	<div class="artc">
     	<div class="inner">
         	<h1 class="site-name">
-            	<a href="\wbs\main.do" class="link">점심뭐먹지?</a>
+            	<a href="\wbs\main.do" class="link">잇(Eat)나우?</a>
             </h1>
             <!-- <form method="get" action="\search" class="form-search">
             	<div>

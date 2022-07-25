@@ -12,7 +12,7 @@
 		<c:import url="/main/header.do" charEncoding="UTF-8" />
 	</header>
 	<section>
-		<h2 class="blind">점심뭐먹지?</h2>
+		<h2 class="blind">잇(Eat)나우?</h2>
 		<div class="wrap">
 			<article aria-label="article">
 				
