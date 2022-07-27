@@ -32,7 +32,7 @@
         <put-attribute name="body" value="/WEB-INF/views/{1}.jsp" />
     </definition>
 
-    <definition name="/board/*" extends="base">
+    <definition name="board/*" extends="nonNavBase">
     	<put-attribute name="body" value="/WEB-INF/views/board/{1}.jsp" />
     </definition>
     

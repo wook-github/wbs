@@ -185,12 +185,6 @@ function changeSubmenu(mMenuId, sMenuId){
         	<h1 class="site-name">
             	<a href="\wbs\main.do" class="link">잇(Eat)나우?</a>
             </h1>
-            <!-- <form method="get" action="\search" class="form-search">
-            	<div>
-                	<input type="search" name="item" aria-label="검색어 입력란" class="inpt-search" />
-                    <button type="submit" aria-label="검색" class="btn-search"></button>
-                </div>
-            </form> -->
             <div class="header_area">
             	<div class="header_menu">
             		<ul>

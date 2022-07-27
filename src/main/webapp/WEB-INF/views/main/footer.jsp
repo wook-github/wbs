@@ -7,9 +7,6 @@ $(document).ready(function(){
 });
 </script>
 <footer class="sec_footer mypage-footer">
-	<nav class="division">
-
-	</nav>
 	<address class="division">
 		<div class="inner">
 			<div class="infos-company">
